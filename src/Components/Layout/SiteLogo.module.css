@@ -10,3 +10,11 @@
     height: 50px;
     width: 50px;
 }
+
+.logoContainer h1 {
+    color: #e2ebf3;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
