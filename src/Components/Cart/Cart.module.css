@@ -1,0 +1,46 @@
+.cart {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 0.45rem;
+    padding: 0.5rem;
+}
+
+.cart ul li {
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: thin;
+}
+
+.cart .total {
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnActions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+.btnClose {
+    outline:  none;
+    border-radius: 0.55rem;
+    background-color: transparent;
+    border: 0.15rem solid brown;
+    color: brown;
+    padding: 0.35rem 0.8rem;
+}
+
+.btnOrder {
+    border: 0;
+    outline:  none;
+    border-radius: 0.55rem;
+    font-weight: bold;
+    background-color: brown;
+    color: #fff;
+    padding: 0.35rem 0.8rem;
+}
