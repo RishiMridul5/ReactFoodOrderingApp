@@ -1,0 +1,12 @@
+.heroContainer {
+    width: 100%;
+    height: 400px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+
+}
+
+.heroContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
