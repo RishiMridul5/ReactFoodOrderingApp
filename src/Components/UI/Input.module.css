@@ -1,0 +1,18 @@
+.input input {
+    border: 0.15rem solid #8b28287c;
+    color: grey;
+    padding: 0.25rem;
+    border-radius: 0.45rem;
+    transition: all 0.25s ease-in;
+}
+
+.input input[type='number']:focus {
+    border-color: #8a2121;
+    color: #8b28287c;
+}
+
+.input label {
+    margin-right: 1rem;
+    font-size: 0.8rem;
+    color: #fff;
+}

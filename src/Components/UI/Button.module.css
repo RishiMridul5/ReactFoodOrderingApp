@@ -1,0 +1,22 @@
+.btn {
+    border: 0.15rem;
+    border-radius: 0.45rem;
+    background-color: transparent;
+    padding: 0.5rem 0.85rem;
+    outline: none;
+    transition: all 0.25s ease-in;
+    cursor: pointer;
+}
+
+.btn.solid {
+    border: 0;
+}
+
+.btn.primary {
+    background-color: #e58f6c;
+    color: #fff;
+}
+
+.btn.primary:hover {
+    background-color: brown;
+}

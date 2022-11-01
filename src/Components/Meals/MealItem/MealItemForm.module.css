@@ -1,0 +1,11 @@
+form {
+    padding: 5px;
+}
+
+form>* {
+    margin-bottom: 5px;
+}
+
+.form>*:last-child {
+    margin-bottom: 0;
+}

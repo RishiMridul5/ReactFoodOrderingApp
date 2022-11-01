@@ -1,7 +1,7 @@
 .summary {
     color: #fff;
-    background-color: #272d38;
-    width: 60%;
+    background-color: #272d38dd;
+    width: 50%;
     padding: 0.75rem;
     margin: 0 auto;
     text-align: center;
@@ -9,7 +9,7 @@
     box-shadow: 0px 5px 10px rgba(68, 61, 61, 0.456);
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 20%;
     transform: translate(-50%, -30%);
 }
 
