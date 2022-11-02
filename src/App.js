@@ -1,14 +1,19 @@
 import Header from "./Components/Layout/Header";
 import Meals from "./Components/Meals/Meals";
 import "./App.css";
-import Modal from "./Components/UI/Modal";
 import Cart from "./Components/Cart/Cart";
+import { ShowCartProvider } from "./store/showCart-ctx";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Meals />
-      <Cart />
+      <ShowCartProvider>
+        <Cart />
+        <Header />
+      </ShowCartProvider>
+
+      <main>
+        <Meals />
+      </main>
     </div>
   );
 }

@@ -1,8 +1,8 @@
 .cart {
     width: 300px;
     background-color: #fff;
-    border-radius: 0.45rem;
-    padding: 0.5rem;
+    border-radius: 0.75rem;
+    padding: 0.5rem 1.25rem;
 }
 
 .cart ul li {
@@ -12,6 +12,7 @@
 }
 
 .cart .total {
+    color: #655c5c;
     font-size: 1.25rem;
     font-weight: bold;
     display: flex;
@@ -20,27 +21,29 @@
 }
 
 .btnActions {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px
 }
 
-.btnClose {
-    outline:  none;
+.btn {
+    cursor: pointer;
+    outline: none;
     border-radius: 0.55rem;
-    background-color: transparent;
     border: 0.15rem solid brown;
     color: brown;
     padding: 0.35rem 0.8rem;
 }
 
-.btnOrder {
-    border: 0;
-    outline:  none;
-    border-radius: 0.55rem;
+.close {
+    background-color: transparent;
+}
+
+.order {
     font-weight: bold;
     background-color: brown;
     color: #fff;
-    padding: 0.35rem 0.8rem;
 }

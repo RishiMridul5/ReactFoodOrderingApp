@@ -1,7 +1,7 @@
 .meals {
     background-color: #fff;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     max-width: 90%;
     border-radius: 0.5rem;
 }
