@@ -7,14 +7,14 @@ const CartItem = ({
   cartContextItems,
 }) => {
   const { id, amount, name, price } = itemDetails;
-  const [amountDecrVisible, setAmountDecrVisible] = useState(true);
+  const [amtReducer, setamtReducer] = useState(true);
 
   
   useEffect(() => {
     cartContextItems.forEach((cartItem) => {
       if (cartItem.amount === 1) {
-        setAmountDecrVisible(false);
-      } else setAmountDecrVisible(true);
+        setamtReducer(false);
+      } else setamtReducer(true);
     });
   }, [cartContextItems]);
 
@@ -27,7 +27,7 @@ const CartItem = ({
       </div>
       <div className={style.price}>Rs. {price * amount}</div>
 
-      {amountDecrVisible && (
+      {amtReducer && (
         <button
           className={style.btnDelItem}
           onClick={() => reduceItemQuantity(id)}
