@@ -27,7 +27,13 @@ const cartReducer = (state, action) => {
   }
 
   if (type === "delItem") {
-    console.log(`Delete item`);
+    const updatedItems = state.cartItems.filter((item) => action.id !== item.id);
+
+    let updatedTotalAmount = 0;
+    for (let i = 0; i < updatedItems.length; i++) {
+      updatedTotalAmount += updatedItems[i].price * updatedItems[i].amount;
+    }
+    return { cartItems: updatedItems, totalAmount: updatedTotalAmount };
   }
 };
 
@@ -57,7 +63,6 @@ export const CartContextProvider = ({ children }) => {
     });
   };
 
-  
   const cartContext = {
     cartItems: cartState.cartItems,
     totalAmount: cartState.totalAmount,

@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./CartItem.module.css";
-const CartItem = ({ itemDetails }) => {
+const CartItem = ({ itemDetails, removeItemFromCart }) => {
   const { id, amount, name, price } = itemDetails;
 
   const cartItemEl = (
@@ -11,7 +11,10 @@ const CartItem = ({ itemDetails }) => {
         <span className={style.amount}> {amount}</span>
       </div>
       <div className={style.price}>Rs. {price * amount}</div>
-      <button className={style.btnDelItem}>
+      <button
+        className={style.btnDelItem}
+        onClick={() => removeItemFromCart(id)}
+      >
         <i className="fa-solid fa-trash icon"></i>
       </button>
     </li>

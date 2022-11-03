@@ -6,6 +6,7 @@ import { useState, useContext } from "react";
 
 const MealItemForm = ({ mealData }) => {
   const [amount, setAmount] = useState(1);
+  const [amountInputValid, setAmountInputValid] = useState(true)
   const { addItem } = useContext(CartContext);
 
   const handleAmountChange = (e) => {

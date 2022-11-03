@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Modal from "../UI/Modal";
 import style from "./Cart.module.css";
 import { ShowCart } from "../../store/showCart-ctx";
@@ -6,13 +6,23 @@ import { CartContext } from "../../store/cart-ctx";
 import CartItem from "./CartItem";
 
 const Cart = (props) => {
-  const { cartItems: cartContextItems, totalAmount } = useContext(CartContext);
+  const {
+    cartItems: cartContextItems,
+    totalAmount,
+    delItem,
+  } = useContext(CartContext);
+  const [emptyCart, setEmptyCart] = useState(true);
+
   const { showCart, hideCartHandler: close } = useContext(ShowCart);
 
-  const cartItems = (
+  useEffect(() => {
+    if (cartContextItems.length > 0) setEmptyCart(false);
+  }, [cartContextItems]);
+
+  let cartItems = (
     <ul>
       {cartContextItems.map((item) => (
-        <CartItem itemDetails={item} />
+        <CartItem itemDetails={item} removeItemFromCart={delItem} />
       ))}
     </ul>
   );
@@ -22,10 +32,14 @@ const Cart = (props) => {
       {showCart && (
         <Modal>
           <div className={style.cart}>
-            <div className={style.total}>
-              <span>Total Amount </span>
-              <span>Rs {totalAmount}</span>
-            </div>
+            {emptyCart ? (
+              <div className={style.total}>Your cart is empty</div>
+            ) : (
+              <div className={style.total}>
+                <span>Total Amount </span>
+                <span>Rs {totalAmount}</span>
+              </div>
+            )}
             {cartItems}
 
             <div className={style.btnActions}>
