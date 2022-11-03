@@ -10,6 +10,7 @@ const Cart = (props) => {
     cartItems: cartContextItems,
     totalAmount,
     delItem,
+    reduceQuantity,
   } = useContext(CartContext);
   const [emptyCart, setEmptyCart] = useState(true);
 
@@ -17,12 +18,18 @@ const Cart = (props) => {
 
   useEffect(() => {
     if (cartContextItems.length > 0) setEmptyCart(false);
+    else setEmptyCart(true);
   }, [cartContextItems]);
 
   let cartItems = (
     <ul>
       {cartContextItems.map((item) => (
-        <CartItem itemDetails={item} removeItemFromCart={delItem} />
+        <CartItem
+          itemDetails={item}
+          removeItemFromCart={delItem}
+          reduceItemQuantity={reduceQuantity}
+          cartContextItems={cartContextItems}
+        />
       ))}
     </ul>
   );
