@@ -1,6 +1,5 @@
 .backDrop {
-    /* min-height: 100vh; */
-    min-height: 200vh;
+    height: 100%;
     width: 100%;
     background-color: #fff;
     background: linear-gradient(45deg, #1e579984 0%, #0b2032b4 51%, #091823a9 80%);
@@ -8,5 +7,5 @@
     left: 0;
     top: 0;
     bottom: 0;
-    z-index: 99;
+    z-index: 9;
 }

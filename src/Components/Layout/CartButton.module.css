@@ -22,15 +22,20 @@
 }
 
 .cartButton .badge {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     border-radius: 100%;
-    background-color: #e4edf1;
-    border: 2px solid #10506b;
-    color: #10506b;
-    padding: 2px;
+    background-color: orangered;
+    box-shadow: 0px 5px 10px #ff44005d;
+    color: #fff;
     margin-left: 20px;
-
+    position: absolute;
+    top: -15px;
+    right: -15px
 }
 
 .cartButton:hover {

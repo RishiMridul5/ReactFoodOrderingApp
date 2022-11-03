@@ -8,7 +8,13 @@ const AvailableMeals = () => {
   const mealsJSX = MEALS.map((meal) => {
     const { id, name, description, price } = meal;
     return (
-      <MealItem key={id} name={name} description={description} price={price} />
+      <MealItem
+        key={id}
+        id={id}
+        name={name}
+        description={description}
+        price={price}
+      />
     );
   });
 

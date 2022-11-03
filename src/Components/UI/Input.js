@@ -1,4 +1,5 @@
 import style from "./Input.module.css";
+
 const Input = ({ label, inputElProps }) => {
   return (
     <div className={style.input}>
