@@ -4,6 +4,7 @@
     padding: 0.25rem;
     border-radius: 0.45rem;
     transition: all 0.25s ease-in;
+    max-width: 100%;
 }
 
 .input input[type='number']:focus {

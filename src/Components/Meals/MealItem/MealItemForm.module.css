@@ -1,5 +1,6 @@
 form {
     padding: 5px;
+    width: 100px;
 }
 
 form>* {
@@ -8,4 +9,11 @@ form>* {
 
 .form>*:last-child {
     margin-bottom: 0;
+}
+.form p{
+    font-size: 0.6rem;
+    color: crimson;
+    font-family: cursive;
+    font-style: italic;
+    text-align: center;
 }
