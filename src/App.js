@@ -19,6 +19,6 @@ function App() {
       </CartContextProvider>
     </div>
   );
-}
+}y
 
 export default App;

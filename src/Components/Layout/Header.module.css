@@ -1,5 +1,6 @@
 .header {
     height: auto;
     width: 100%;
+    position: sticky;
 }
 

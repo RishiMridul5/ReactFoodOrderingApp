@@ -48,9 +48,6 @@ const cartReducer = (state, action) => {
     const targetItem = state.cartItems.find((item) => action.id === item.id);
     const updatedTotalAmount = state.totalAmount - targetItem.price;
 
-    // if (targetItem.amount === 1)
-    //   return { cartItems: updatedItems, totalAmount: updatedTotalAmount };
-
     return { cartItems: updatedItems, totalAmount: updatedTotalAmount };
   }
 };

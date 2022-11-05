@@ -8,10 +8,12 @@
 }
 
 .mealItem div:nth-child(1) {
+    font-size: 1.25rem;
     font-weight: 600;
 }
 
 .mealItem div:nth-child(2) {
+    font-size: 0.9rem;
     font-family: cursive;
     font-style: italic;
     color: darkgrey;
